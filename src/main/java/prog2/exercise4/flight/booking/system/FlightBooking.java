@@ -168,7 +168,7 @@ public class FlightBooking {
         this.totalTicketPrice = Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
     }
     public double getTotalTicketPrice() {
-        return  Math.abs((((2 *(300 * (0.1*300) + (0.05*300))) + (5*(300 * (0.1*300) + (0.05*300)))) + 250)*2);
+        return  Math.abs((((2 * ((300 + (0.1 * 300)) + (0.05 * 300))) + (5 * ((300 + (0.1 * 300)) + (0.05 * 300)))) + 250) * 2);
     }
 
     public void setDepartingTicketPrice(int child, int adult) {
