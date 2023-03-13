@@ -232,13 +232,11 @@ public class FlightBooking {
         }
 
     public void setDepartureDate(LocalDate departureDate) {
-        //this.DepartureDate = DepartureDate;
         String departingString = "2023-03-04";
         this.departingDate = LocalDate.parse(departingString);
     }
 
     public void setReturnDate(LocalDate returnDate) {
-        // this.ReturnDate = ReturnDate;
         String returningString = "2023-03-05";
         this.returnDate = departingDate.plusDays(2);
     }
@@ -282,6 +280,12 @@ public class FlightBooking {
 
         this.adultPassengers = adultPassengers;
     }
+    public void setTotalPassengers(int totalPassengers, int totalPassengers2){
+        this.totalPassengers=childPassengers+adultPassengers;
+        }
+        public int getTotalPassengers() {
+            return totalPassengers;
+        }
     public String toString(){
         return "Dear " + passengerFullName + ". Thank you for booking your flight with " +
         flightCompany + ".\nFollowing are the details of your booking and the trip:" + "\n" +
@@ -396,11 +400,6 @@ public class FlightBooking {
                 break;
         }
     }
-    public void setTotalPassengers(int totalPassengers, int totalPassengers2){
-        this.totalPassengers=childPassengers+adultPassengers;
-        }
-        public int getTotalPassengers() {
-            return totalPassengers;
-        }
+    
 }
 
